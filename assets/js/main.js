@@ -155,7 +155,7 @@ function initTabs () {
 function initSkewCarousel () {
   const section = document.querySelector('.skew'); if (!section || !ANIMATE) return;
   const track = section.querySelector('.skew__track');
-  const SPEED = 0.02;                 // px por ms (~20px/s), constante
+  const SPEED = 0.05;                 // px por ms (~50px/s), constante
   let x = 0, visible = false;
   gsap.ticker.add((t, dt) => {
     if (!visible) return;
